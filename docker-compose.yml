@@ -1,7 +1,8 @@
 version: '3'
 
 services:
- build: ./flaskdock
- ports:
-  -"8000:8000"
- network_mode: host
+  flask_dock:
+    build: ./flaskdock
+    ports:
+      -"8000:8000"
+    network_mode: host
